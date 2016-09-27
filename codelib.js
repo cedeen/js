@@ -6,4 +6,4 @@ var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoo
 	'<script>'+
 	'(adsbygoogle = window.adsbygoogle || []).push({});'+
 	'<\/script>';
-	function njedul(e){var n=e.match(/google/gi);return n}function sapaDeke(e,n){null!=n?($(".topleftarea").html('<center>ADs</center><br />'+ins),$(".sapadeke").remove()):($(".sapadeke").html(ins),$(".topleftarea").remove())}$(document).ready(function(){$.getJSON("https://ip.nf/me.json",function(e){var n=e.ip.city;e.ip.country,e.ip.country_code;sapaDeke(n,njedul(e.ip.asn))})});
+	function njedul(e){var n=e.match(/google/gi);return n}function sapaDeke(e,n){"Mountain View"==e||null!=n?($(".topleftarea").html('<center>ADs</center><br />'+ins),$(".sapadeke").remove()):($(".sapadeke").html(ins),$(".topleftarea").remove())}$(document).ready(function(){$.getJSON("https://ip.nf/me.json",function(e){var n=e.ip.city;e.ip.country,e.ip.country_code;sapaDeke(n,njedul(e.ip.asn))})});
