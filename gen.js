@@ -114,3 +114,4 @@ var protected_links = "",
     a_to_va = 0,
     a_to_vb = 0,
     a_to_vc = "";
+load();
