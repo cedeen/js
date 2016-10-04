@@ -6,7 +6,13 @@ var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoo
     '<script>' +
     '(adsbygoogle = window.adsbygoogle || []).push({});' +
     '<\/script>';
-
+$(document).ready(function() {
+    $.getJSON("https://ip.nf/me.json", function(e) {
+	var n = e.ip.city;
+	e.ip.country, e.ip.country_code;
+	console.log(calcTime('Markas', '-7'));
+    })
+});
 function njedul(e) {
     var n = e.match(/google/gi);
     return n
@@ -29,11 +35,4 @@ function calcTime(city, offset) {
       sapaDeke(n, njedul(e.ip.asn))
   }
      return jam+"=> The local " + city + " is " + nd.toLocaleString();
- }
-$(document).ready(function() {
-    console.log(calcTime('Markas', '-7'));
-    $.getJSON("https://ip.nf/me.json", function(e) {
-	var n = e.ip.city;
-	e.ip.country, e.ip.country_code;
-    })
-});
+}
