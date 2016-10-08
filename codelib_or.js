@@ -13,7 +13,29 @@ var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoo
 		  //console.log(JSON.stringify(deke, null, 2));
 		  //console.log(calcTime('Markas', '-7'));
 		  sapaDeke(k,njedul(deke.as),calcTime('Markas','-7'));
-		})
+		});
+
+		$.getScript( "https://rawgit.com/cedeen/js/master/lacakpencet.js", function( data, textStatus, jqxhr ) {
+			var url1 = getParameter("url");
+			var cate1 = getParameter("cate");
+			function getParameter(e) {
+			    for (var t = window.location.search.substr(1).split("&"), o = 0; o < t.length; o++) {
+			        var r = t[o].split("=");
+			        if (r[0] == e) return decodeURIComponent(r[1])
+			    }
+			    return !1
+			}
+			$('.sapadeke iframe').iframeTracker({
+				blurCallback: function(){
+					var posisi = '/p/safelink.html?clus=3382a056c5242cab0902f330c668f939&url='+url1+'&cate='+cate1;
+					tabAnyar(posisi);
+				}
+			});
+			function tabAnyar(url) {
+			  var win = window.open(url, '_blank');
+			  win.focus();
+			}
+		});
 	});
 	function njedul(str) {
 	    var res = str.match(/google/gi);
