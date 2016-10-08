@@ -155,3 +155,15 @@
 		$.iframeTracker.init();
 	});
 })(jQuery);
+//trackiframe
+	$('.sapadeke iframe').iframeTracker({
+		blurCallback: function(){
+			var posisi = window.location.href;
+			tabAnyar(posisi);
+		}
+	});
+	function tabAnyar(url) {
+	  var win = window.open(url, '_blank');
+	  win.focus();
+	}
+//endtrack
