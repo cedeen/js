@@ -59,3 +59,6 @@ var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoo
 	     //return jam+"=> The local " + city + " is " + nd.toLocaleString();\
 	     return jam;
 	}
+	$(window).load(function() {
+		$(".se-pre-con").fadeOut("slow");;
+	});
