@@ -43,7 +43,7 @@ function load() {
     var e = document.getElementById("btn"),
         t = document.getElementById("dlurl"),
         o = document.getElementById("download"),
-        r = 30,
+        r = 15,
         n = document.createElement("span");
     t.parentNode.replaceChild(n, t);
     var a;
