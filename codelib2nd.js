@@ -1,8 +1,8 @@
 //Left Top Sidebar Premium - eng
 var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"><\/script><ins class="adsbygoogle"'+
      'style="display:inline-block;width:300px;height:250px"'+
-     'data-ad-client="ca-pub-1001966961853856"'+
-     'data-ad-slot="9839151924"></ins>'+
+     'data-ad-client="ca-pub-1822730405949039"'+
+     'data-ad-slot="5752509707"></ins>'+
 	'<script>'+
 	'(adsbygoogle = window.adsbygoogle || []).push({});'+
 	'<\/script>';
