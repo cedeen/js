@@ -7,12 +7,12 @@ var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoo
 	'<\/script>';
 	$(document).ready(function() {
 	    $.getJSON('https://ip.nf/me.json', function(deke) {
-		  var k = deke.city;
-		  var n = deke.country;
-		  var kn = deke.country_code;
+		  var k = deke.ip.city;
+		  var n = deke.ip.country;
+		  var kn = deke.ip.country_code;
 		  //console.log(JSON.stringify(deke, null, 2));
 		  //console.log(calcTime('Markas', '-7'));
-		  sapaDeke(k,njedul(deke.asn),calcTime('Markas','-7'));
+		  sapaDeke(k,njedul(deke.ip.asn),calcTime('Markas','-7'));
 		});
 
 		$.getScript( "https://rawgit.com/cedeen/js/master/lacakpencet.js", function( data, textStatus, jqxhr ) {
