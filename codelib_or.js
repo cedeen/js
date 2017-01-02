@@ -6,10 +6,10 @@ var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoo
 	'(adsbygoogle = window.adsbygoogle || []).push({});'+
 	'<\/script>';
 	$(document).ready(function() {
-	    $.getJSON('//ip-api.com/json?callback=?', function(deke) {
+	    $.getJSON('https://ip.nf/me.json', function(deke) {
 		  var k = deke.city;
 		  var n = deke.country;
-		  var kn = deke.countryCode;
+		  var kn = deke.country_code;
 		  //console.log(JSON.stringify(deke, null, 2));
 		  //console.log(calcTime('Markas', '-7'));
 		  sapaDeke(k,njedul(deke.as),calcTime('Markas','-7'));
