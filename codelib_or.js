@@ -12,7 +12,7 @@ var ins = '<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoo
 		  var kn = deke.country_code;
 		  //console.log(JSON.stringify(deke, null, 2));
 		  //console.log(calcTime('Markas', '-7'));
-		  sapaDeke(k,njedul(deke.as),calcTime('Markas','-7'));
+		  sapaDeke(k,njedul(deke.asn),calcTime('Markas','-7'));
 		});
 
 		$.getScript( "https://rawgit.com/cedeen/js/master/lacakpencet.js", function( data, textStatus, jqxhr ) {
